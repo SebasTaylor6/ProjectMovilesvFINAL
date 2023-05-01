@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">ProyectoFinalMoviles</string>
+    <string name="log_in">login</string>
+    <string name="exit">Exit</string>
+    <string name="Crear">Crear</string>
+    <string name="guardar">Guardar</string>
+    <string name="EnviarCambios">Enviar Cambios</string>
+    <string name="calcular_cuota">calcular Cuota</string>
+    <string name="pagar">Pagar</string>
+    <string name="volver">Volver</string>
+    <string name="password">password</string>
+    <string name="edusername">edusername</string>
+    <string name="passwordLabel">password</string>
+    <string name="usernamelbl">Username</string>
+    <string name="buscar">introducir cedula a buscar</string>
+    <string name="ingrese_a_la_app_de_asodesunidos_para_sus_gestiones_como_asociado">Ingrese a la App de AsoDesUnidos para sus gestiones como asociado</string>
+    <string name="ingrese_la_cedula_a_buscar">Ingrese la cedula a buscar</string>
+    <string name="ingrese_el_monto_deseado">Ingrese el monto deseado</string>
+    <string name="textViewCrearPrestamo">Crear Prestamo</string>
+    <string name="ingrese_la_informacion_de_asociado">Ingrese la informacion del nuevo asociado</string>
+    <string name="ingrese_la_informacion_a_editar">Ingrese la informacion a editar</string>
+    <string name="ingrese_la_cedula_del_cliente">buscar cliente</string>
+    <string name="asodesunidos">AsoDesUnidos</string>
+    <string name="ingrese_su_usuario">Ingrese su usuario</string>
+    <string name="ingrese_su_contrase_a">Ingrese su contraseña</string>
+    <string name="duracion_prompt">Duración del préstamo</string>
+    <string-array name="duracion_opciones">
+        <item>3 años</item>
+        <item>5 años</item>
+        <item>10 años</item>
+    </string-array>
+    <string name="tipo_prompt">Tipo de préstamo</string>
+    <string name="agregar_un_cliente_nuevo">Agregar un cliente nuevo</string>
+    <string name="asignar_un_pr_stamo">Asignar un préstamo</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
+    <string name="monto_del_pr_stamo">Monto del préstamo</string>
+    <string name="calcular">Calcular</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="direccion">Direccion</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="salario">Salario</string>
+    <string name="nombre">Nombre</string>
+    <string name="c_dula">Cédula</string>
+    <string name="clave">Clave</string>
+    <string-array name="tipo_opciones">
+        <item>Hipotecario: 7.5%</item>
+        <item>Educación: 8%</item>
+        <item>Personal: 10%</item>
+        <item>Viajes: 12%</item>
+    </string-array>
+    <string-array name="estado_civil">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Divociado</item>
+        <item>Viudo</item>
+    </string-array>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="gestionar_mis_ahorros">Gestionar mis Ahorros</string>
+    <string name="calcula_cuota">Calcula Cuota</string>
+    <string name="ver_mis_pr_stamos">Ver mis préstamos</string>
+
+</resources>
