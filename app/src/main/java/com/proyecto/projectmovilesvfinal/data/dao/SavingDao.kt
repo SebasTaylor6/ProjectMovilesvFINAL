@@ -11,6 +11,6 @@ interface SavingDao {
     @Insert
     suspend fun insertSaving(saving: Saving)
 
-    @Query("SELECT * FROM loan_table WHERE client=:id")
+    @Query("SELECT * FROM saving_table WHERE client=:id")
     fun getSavingsById(id:Int):List<Saving>
 }

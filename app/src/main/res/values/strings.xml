@@ -25,9 +25,9 @@
     <string name="ingrese_su_contrase_a">Ingrese su contraseña</string>
     <string name="duracion_prompt">Duración del préstamo</string>
     <string-array name="duracion_opciones">
-        <item>3 años</item>
-        <item>5 años</item>
-        <item>10 años</item>
+        <item value = "3">3</item>
+        <item value = "5">5</item>
+        <item value = "10">10</item>
     </string-array>
     <string name="tipo_prompt">Tipo de préstamo</string>
     <string name="agregar_un_cliente_nuevo">Agregar un cliente nuevo</string>
@@ -43,10 +43,10 @@
     <string name="c_dula">Cédula</string>
     <string name="clave">Clave</string>
     <string-array name="tipo_opciones">
-        <item>Hipotecario: 7.5%</item>
-        <item>Educación: 8%</item>
-        <item>Personal: 10%</item>
-        <item>Viajes: 12%</item>
+        <item value = "H">Hipotecario: 7.5%</item>
+        <item value = "E">Educación: 8%</item>
+        <item value = "P">Personal: 10%</item>
+        <item vlaue = "V">Viajes: 12%</item>
     </string-array>
     <string-array name="estado_civil">
         <item>Soltero</item>
@@ -66,5 +66,27 @@
     <string name="gestionar_mis_ahorros">Gestionar mis Ahorros</string>
     <string name="calcula_cuota">Calcula Cuota</string>
     <string name="ver_mis_pr_stamos">Ver mis préstamos</string>
+    <string name="cerrar_sesion">Cerrar sesion</string>
+    <string name="id_del_cliente">Id del cliente</string>
+    <string name="total_a_pagar">Total a pagar:</string>
+    <string name="informacion_personal">Informacion Personal</string>
+    <string name="fecha_de_nacimiento1">Fecha de Nacimiento</string>
+    <string name="tipo_de_prestamo">Tipo de prestamo:</string>
+    <string name="monto">Monto:</string>
+    <string name="tiempo_del_prestamo">Tiempo del prestamo:</string>
+    <string name="borrar">Borrar</string>
+    <string name="credito">credito</string>
+    <string name="creditotot">Credito:</string>
+    <string name="mis_prestamos">Mis Prestamos</string>
+    <string name="salir">Salir</string>
+    <string name="monto_a_pagar">Monto a Pagar</string>
+    <string name="ahorros_del_cliente">Ahorros del cliente</string>
+    <string name="navide_o">Navideño</string>
+    <string name="activar_desactivar">Activar/Desactivar</string>
+    <string name="escolar">Escolar</string>
+    <string name="marchamo">Marchamo</string>
+    <string name="extraordinario">Extraordinario</string>
+    <string name="estado">Estado:</string>
+    <string name="desactivado">Desactivado</string>
 
 </resources>

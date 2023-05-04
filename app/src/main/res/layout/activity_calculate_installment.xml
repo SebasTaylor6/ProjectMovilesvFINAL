@@ -14,6 +14,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/edit_background"
         android:entries="@array/tipo_opciones"
+        android:minHeight="48dp"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,19 +22,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-            android:id="@+id/spnPlazo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/edit_background"
-            android:spinnerMode="dropdown"
-            android:entries="@array/duracion_opciones"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spnTipoCredito" />
+        android:id="@+id/spnPlazo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_background"
+        android:entries="@array/duracion_opciones"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnTipoCredito" />
 
         <EditText
             android:id="@+id/etMonto"
@@ -77,6 +79,17 @@
         android:text="@string/volver"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="259dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/total_a_pagar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
 
 

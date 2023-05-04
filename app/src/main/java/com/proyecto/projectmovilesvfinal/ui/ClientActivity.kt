@@ -8,7 +8,6 @@ import com.proyecto.projectmovilesvfinal.data.model.Client
 import com.proyecto.projectmovilesvfinal.data.viewModel.ClientViewModel
 import com.proyecto.projectmovilesvfinal.data.viewModel.LoginViewModel
 import com.proyecto.proyectofinalmoviles.databinding.ActivityClientBinding
-import com.proyecto.proyectofinalmoviles.databinding.ActivityMainBinding
 
 class ClientActivity: AppCompatActivity() {
     private lateinit var binding:ActivityClientBinding
@@ -27,12 +26,19 @@ private lateinit var user:Client
         }
 
 
-        binding.btnLogout.setOnClickListener {
+        binding.btnLogout2.setOnClickListener {
             logout()
         }
 
+        binding.btnLogout.setOnClickListener {
+            cuota()
+        }
         binding.btnAddClient.setOnClickListener {
             loan()
+        }
+
+        binding.btnLogout3.setOnClickListener {
+            info()
         }
 
         binding.btnAssignLoan.setOnClickListener {
@@ -48,6 +54,18 @@ private lateinit var user:Client
 
     fun loan(){
         val intent = Intent(this,GetLoanActivity::class.java)
+        intent.putExtra("id",user.id)
+        startActivity(intent)
+    }
+
+    fun cuota(){
+        val intent = Intent(this,CuotaActivity::class.java)
+        intent.putExtra("id",user.id)
+        startActivity(intent)
+    }
+
+    fun info(){
+        val intent = Intent(this,GetClientDataActivity::class.java)
         intent.putExtra("id",user.id)
         startActivity(intent)
     }

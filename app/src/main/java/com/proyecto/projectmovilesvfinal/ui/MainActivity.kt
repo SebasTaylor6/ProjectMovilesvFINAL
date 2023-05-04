@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import com.proyecto.proyectomovilesv2.data.model.User
+import com.proyecto.projectmovilesvfinal.data.model.User
 import com.proyecto.projectmovilesvfinal.data.viewModel.LoginViewModel
 import com.proyecto.proyectofinalmoviles.databinding.ActivityMainBinding
 
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         if (!logged) {
-            Toast.makeText(applicationContext,"Inicie sesionjh para continuar",Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext,"Inicie sesion para continuar",Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -90,5 +90,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this,ClientActivity::class.java)
         intent.putExtra("logged",logged)
         intent.putExtra("id",user.id)
+        startActivity(intent)
+
     }
 }

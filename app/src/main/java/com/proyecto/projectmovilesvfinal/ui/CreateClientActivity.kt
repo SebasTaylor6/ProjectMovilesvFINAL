@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.proyecto.projectmovilesvfinal.data.viewModel.AdminViewModel
 import com.proyecto.proyectofinalmoviles.databinding.ActivityCreateClientBinding
 import com.proyecto.projectmovilesvfinal.data.model.Client
-import com.proyecto.proyectomovilesv2.data.model.User
+import com.proyecto.projectmovilesvfinal.data.model.User
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
@@ -28,21 +28,20 @@ class CreateClientActivity: AppCompatActivity() {
 
     fun createClient(){
         val formatter:DateTimeFormatter = DateTimeFormatter.ofPattern("d/MM/yyyy")
-        val user:User = (User(null,binding.etCedula.text.toString(),binding.password.text.toString(),2))
-        user.id?.let {
-            Client(null,binding.etCedula.text.toString(),
-                binding.etNombre.text.toString(),
-                binding.etSalario.text.toString().toDouble(),
-                binding.etTelefono.text.toString(),
-                LocalDate.parse(binding.etFechaNacimiento.text.toString(),formatter),
-                binding.spinnerEstadoCivil.selectedItem.toString(),
-                it
-            )
-        }?.let {
-            adminViewModel.addClient(user,
-                it
-            )
-        }
+        val user: User = (User(binding.etCedula.text.toString(),binding.password.text.toString(),2))
+        adminViewModel.addUser(user)
+
+        adminViewModel = ViewModelProvider(this)[AdminViewModel::class.java]
+
+
+
+        val client:Client = Client(binding.etCedula.text.toString(),
+            binding.etNombre.text.toString(),
+            binding.etSalario.text.toString().toDouble(),
+            binding.etTelefono.text.toString(),
+            LocalDate.parse(binding.etFechaNacimiento.text.toString(),formatter),
+            binding.spinnerEstadoCivil.selectedItem.toString(),user.id)
+        adminViewModel.addClient(client)
 
         Toast.makeText(this, "Cliente creado!", Toast.LENGTH_SHORT).show()
         val intent = Intent(this,AdminActivity::class.java)

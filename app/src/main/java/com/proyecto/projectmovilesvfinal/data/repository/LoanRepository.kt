@@ -9,6 +9,6 @@ class LoanRepository(private val loanDao: LoanDao) {
     }
 
     fun listOfLoan(id:Int):List<Loan>{
-        return listOfLoan(id)
+        return loanDao.getAllByID(id)
     }
 }

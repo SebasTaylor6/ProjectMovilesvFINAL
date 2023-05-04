@@ -1,11 +1,10 @@
 package com.proyecto.projectmovilesvfinal.data.repository
 
-import com.proyecto.proyectomovilesv2.data.dao.UserDao
-import com.proyecto.proyectomovilesv2.data.model.User
+import com.proyecto.projectmovilesvfinal.data.dao.UserDao
+import com.proyecto.projectmovilesvfinal.data.model.User
 
 
 class UserRepository(private val userDAO: UserDao) {
-    val readAllData:List<User> = userDAO.getAll()
 
     suspend fun addUser(user: User){
         return userDAO.insert(user)
@@ -15,5 +14,8 @@ class UserRepository(private val userDAO: UserDao) {
         return userDAO.validateLogin(username,password)
     }
 
+    fun readAllData():List<User>{
+        return userDAO.getAll()
+    }
 
 }

@@ -42,6 +42,7 @@ class AdminActivity : AppCompatActivity() {
     }
 
     fun addLoan(){
-
+        val intent = Intent(this, AddLoanActivity::class.java)
+        startActivity(intent)
     }
 }

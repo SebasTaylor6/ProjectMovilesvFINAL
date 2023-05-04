@@ -43,6 +43,18 @@ android:name="com.proyecto.projectmovilesvfinal.ui.AdminActivity"            and
                 android:value="" />
         </activity>
         <activity
+            android:name="com.proyecto.projectmovilesvfinal.ui.CuotaActivity"            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.proyecto.projectmovilesvfinal.ui.GetLoanActivity"            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.proyecto.projectmovilesvfinal.ui.GetClientDataActivity"            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

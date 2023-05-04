@@ -6,10 +6,10 @@ import com.proyecto.projectmovilesvfinal.data.dao.LoanDao
 import com.proyecto.projectmovilesvfinal.data.dao.SavingDao
 import com.proyecto.projectmovilesvfinal.data.model.Client
 import com.proyecto.projectmovilesvfinal.data.dao.ClientDao
-import com.proyecto.proyectomovilesv2.data.dao.UserDao
+import com.proyecto.projectmovilesvfinal.data.dao.UserDao
 import com.proyecto.projectmovilesvfinal.data.model.Loan
 import com.proyecto.projectmovilesvfinal.data.model.Saving
-import com.proyecto.proyectomovilesv2.data.model.User
+import com.proyecto.projectmovilesvfinal.data.model.User
 import com.proyecto.proyectomovilesv2.data.utils.Converters
 
 @Database(entities = [User:: class, Client::class, Loan::class, Saving::class], version = 1, exportSchema = false)
@@ -35,7 +35,7 @@ abstract class MainDatabase :RoomDatabase(){
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     MainDatabase::class.java,
-                    "movdb"
+                    "dbmovilesv1"
                 ).allowMainThreadQueries().build()
                 INSTANCE = instance
                 return instance

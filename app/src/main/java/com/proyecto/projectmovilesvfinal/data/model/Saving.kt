@@ -11,8 +11,10 @@ import com.proyecto.projectmovilesvfinal.data.model.Client
         childColumns = ["client"],
         parentColumns = ["id"])])
 data class Saving(
-    @PrimaryKey(autoGenerate = true) val id:Int?,
+
     @ColumnInfo(name = "saving") val saving:Double,
     @ColumnInfo(name = "type") val type:String,
     @ColumnInfo(name = "client") val client:Int,
-)
+){
+    @PrimaryKey(autoGenerate = true) var id:Int?=null
+}

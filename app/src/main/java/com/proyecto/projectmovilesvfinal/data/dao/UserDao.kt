@@ -1,7 +1,7 @@
-package com.proyecto.proyectomovilesv2.data.dao
+package com.proyecto.projectmovilesvfinal.data.dao
 
 import androidx.room.*
-import com.proyecto.proyectomovilesv2.data.model.User
+import com.proyecto.projectmovilesvfinal.data.model.User
 
 @Dao
 interface UserDao {

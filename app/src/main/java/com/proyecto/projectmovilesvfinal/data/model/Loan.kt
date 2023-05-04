@@ -11,9 +11,10 @@ foreignKeys = [ForeignKey(entity = Client::class,
     childColumns = ["client"],
     parentColumns = ["id"])])
 data class Loan(
-    @PrimaryKey(autoGenerate = true) val id:Int?,
     @ColumnInfo(name = "credit") val credit:Double,
     @ColumnInfo(name = "time") val time:Int,
     @ColumnInfo(name = "type") val type:Char,
-    @ColumnInfo(name = "client") val client:Int,
-    )
+    @ColumnInfo(name = "client") var client:Int,
+    ){
+    @PrimaryKey(autoGenerate = true) var id:Int? = null
+}
